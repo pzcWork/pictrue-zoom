@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="./picZoom.js"></script>
+<style type="text/css">
+    .outContent{
+        width: 800px;
+        height: 800px;
+        border: 1px solid #999999;
+        position: relative;
+    }
+    #pic{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+    }
+</style>
+<body>
+<div class="outContent">
+    <img id="pic" src="./img/pic.jpg" alt="">
+</div>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var img = document.getElementById('pic')
+        // 缩放组件调用方法picZoom(img, minH, maxH);
+        picZoom(img,300,3000);
+    }
+</script>
+</html>
